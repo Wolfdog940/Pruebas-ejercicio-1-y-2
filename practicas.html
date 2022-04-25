@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Tareas</title>
+    <h1><strong><u><p>Tareas Pendientes</p></strong></h1></u>
+
+</head>
+<body>
+<input  id="mi input">
+<br>
+<button id="mi boton">agregar tarea</button>
+
+<u id="mi lista"></ul>
+
+
+
+
+<script>
+var tareas = document.getElementById( 'mi lista');
+
+var lista =[
+'Me llamo oscar',
+'Me apellido  Urrutia',
+'Tengo 39 años',
+
+];
+for (var i=0;i<lista.length;i +=1){
+var datos = lista[i];
+var li = document.createElement ('li');
+li.textContent = datos;
+
+tareas.appendChild (li);
+
+
+
+
+
+
+};
+
+var boton = document.getElementById('mi boton');
+
+boton.addEventListener("mousedown",function(){
+
+    var input= document.getElementById('mi input').value;
+    var li = document.createElement('li');
+    li.textContent= input;
+    tareas.appendChild(li);
+
+
+});
+
+//function tarea (){
+
+    //var input= document.getElementById('mi input');
+    //var li = document.createElement('li');
+    //li.textContent= input;
+    //tareas.appendChild(li);
+    
+
+//};
+var input = document.getElementById('mi input');
+input.addEventListener("keydown",function(tecla){
+    var input= document.getElementById('mi input');
+    var li = document.createElement('li');
+    li.textContent= input;
+
+    
+    
+    console.log(tecla)
+    
+    
+    
+    
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>   
+</body>
+</html>
+
+
