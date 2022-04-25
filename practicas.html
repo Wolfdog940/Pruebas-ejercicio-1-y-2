@@ -63,20 +63,22 @@ boton.addEventListener("mousedown",function(){
 
 //};
 var input = document.getElementById('mi input');
-input.addEventListener("keydown",function(tecla){
+input.addEventListener("keydown",function(evento){
     var input= document.getElementById('mi input');
     var li = document.createElement('li');
     li.textContent= input;
-
     
+    console.log(evento)
+  
     
-    console.log(tecla)
     
     
     
     
 
 });
+  
+
 
 
 
