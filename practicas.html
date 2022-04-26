@@ -65,10 +65,10 @@ boton.addEventListener("mousedown",function(){
 var input2 = document.getElementById('mi_input');
 
 input2.addEventListener("keydown",function(){
-    var input2= document.getElementById('mi_input');
+    var input2= document.getElementById('mi_input').value;
     var li = document.createElement('li');
-    li.textContent= input2.value;//para que me agrege a li el valor de input //Sigo sin entender lo del value
-    
+    li.textContent= input2;
+
 
 
     if(event.key == "Enter") {
