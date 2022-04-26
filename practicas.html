@@ -9,17 +9,17 @@
 
 </head>
 <body>
-<input  id="mi input">
+<input  id="mi_input">
 <br>
-<button id="mi boton">agregar tarea</button>
+<button id="mi_boton">agregar tarea</button>
 
-<u id="mi lista"></ul>
+<u id="mi_lista"></ul>
 
 
 
 
 <script>
-var tareas = document.getElementById( 'mi lista');
+var tareas = document.getElementById( 'mi_lista');
 
 var lista =[
 'Me llamo oscar',
@@ -41,11 +41,11 @@ tareas.appendChild (li);
 
 };
 
-var boton = document.getElementById('mi boton');
+var boton = document.getElementById('mi_boton');
 
 boton.addEventListener("mousedown",function(){
 
-    var input= document.getElementById('mi input').value;
+    var input= document.getElementById('mi_input').value;
     var li = document.createElement('li');
     li.textContent= input;
     tareas.appendChild(li);
@@ -62,12 +62,13 @@ boton.addEventListener("mousedown",function(){
     
 
 //};//CON ESTO NO FUE CAPAZ DE RESOLVERLO , ASI QUE LO HICE A MI MANERA , MAS CODIGO , PERO LO VEO MEJOR
-var input2 = document.getElementById('mi input');
+var input2 = document.getElementById('mi_input');
 
 input2.addEventListener("keydown",function(){
-    var input2= document.getElementById('mi input');
+    var input2= document.getElementById('mi_input');
     var li = document.createElement('li');
-    li.textContent= input2;
+    li.textContent= input2.value;//para que me agrege a li el valor de input //Sigo sin entender lo del value
+    
 
 
     if(event.key == "Enter") {
