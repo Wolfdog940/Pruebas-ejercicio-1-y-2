@@ -65,24 +65,19 @@ boton.addEventListener("mousedown",function(){
 var input2 = document.getElementById('mi_input');
 
 input2.addEventListener("keydown",function(){
+    //if(event.key !== "Enter"){return };
+
+   if(event.key == "Enter") {
     var input2= document.getElementById('mi_input').value;
     var li = document.createElement('li');
     li.textContent= input2;
-
-
-
-    if(event.key == "Enter") {
-        
+  
     tareas.appendChild(li);
-    
+    console.log(event)
     
     
     }
-   
- 
-   
-  
-    });
+});
 
 
 
